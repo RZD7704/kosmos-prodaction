@@ -1,0 +1,63 @@
+.header {
+	background-color: #17181B;
+
+
+    &__inner {
+        display: flex;
+        padding: 0 30px;
+        height: 45px;   
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        margin-left: auto;
+
+        .main-menu {
+            display: flex;
+
+            &__item {
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                padding-left: 60px;
+            }
+
+            &__link {
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color: #DEDEDE;
+                text-decoration: none;
+            }
+        }
+
+        .phones {
+            padding-left: 60px;
+
+            &__link {
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color: #DEDEDE;
+                text-decoration: none;
+            }
+        }
+
+        .language {
+            padding-left: 60px;
+
+            &__link {
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color: #DEDEDE;
+                text-decoration: none;
+            }
+            
+        }
+    }
+}
+
+.logotype {
+   line-height: 0;
+}
