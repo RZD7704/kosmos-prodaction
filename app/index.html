@@ -14,7 +14,13 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__inner">
-				<div class="logotype">
+				<div class="header__item header__burger">
+					<button class="btn-burger" type="button">
+						<span class="btn-burger__line"></span>
+					</button>
+				</div>
+
+				<div class="header__item logotype">
 					<a href="#" class="logotype__link">
 						<img src="images/Logo-png.png" alt="Logo">
 					</a>	
@@ -35,16 +41,83 @@
 					<div class="phones">
 						<a href="tel:+38 050 455 75 07" class="phones__link">+38 050 455 75 07</a>
 					</div>
-					<div class="language">
-						<a href="#" class="language__link">EN</a>
-					</div>
+
 				</nav>
+
+				<div class="header__item language">
+					<a href="#" class="language__link">EN</a>
+				</div>
 			</div>
 		</header>
 
 
 		<div class="content">
+			<section class="main-banner">
+				<h1 class="main-banner__headline">KOSMOS production</h1>
+				<div class="main-banner__inner">
+					<div class="main-banner-wrap">
+						<div class="banner-contact">
+							<h3 class="main-banner__subheading">Нужен качественный фото или видео контент для вашего продукта?</h3>
+							<form action="#" class="banner-form">
+								<div class="field-wrap">
+									<label class="form-label d-block" for="banner-name">Имя</label>
+									<input type="text" id="banner-name" class="form-input form-input__banner">
 
+									<label class="form-label d-block" for="banner-number">Номер телефона</label>
+									<input type="text" id="banner-number" class="form-input form-input__banner">
+
+									<label class="form-label d-block" for="banner-service">Желаемая услуга</label>  
+									<input type="text" id="banner-service" class="form-input form-input__banner">
+
+								</div>
+								<div class="txt-center">
+									<input type="submit" name="submit" class="btn btn_transparent btn_style_light">
+								</div>
+							</form>
+						</div>
+						<div class="banner-social-wrap">
+							<ul class="banner-social">
+								<li class="banner-social__item">
+									<a href="#" class="banner-social__link">
+										<svg class="banner-social__link--icon">
+											<use xlink:href="images/sprite.svg#footer-insta-svg"></use>
+										</svg>
+										<span class="banner-social__link--name">Instagram</span>
+									</a>
+								</li>
+								<li class="banner-social__item">
+									<a href="#" class="banner-social__link">
+										<svg class="banner-social__link--icon">
+											<use xlink:href="images/sprite.svg#footer-facebook-svg"></use>
+										</svg>
+										<span class="banner-social__link--name">Facebook</span>
+									</a>
+								</li>
+								<li class="banner-social__item">
+									<a href="#" class="banner-social__link">
+										<svg class="banner-social__link--icon">
+											<use xlink:href="images/sprite.svg#footer-youtube-svg"></use>
+										</svg>
+										<span class="banner-social__link--name">Youtube</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="banner-media">
+							<div class="banner-media__preview" style="background-image: url('images/studio-foto.jpg');">
+								<button type="button" class="banner-media__play">
+									<svg class="banner-media__play--icon">
+										<use xlink:href="images/sprite.svg#button-play"></use>
+									</svg>
+								</button>
+							</div>
+
+					</div>
+				</div>
+
+
+			</section>
 		</div>
 
 
@@ -57,7 +130,7 @@
 						<form action="#" class="footer-callback">
 							<div class="field-wrap">
 								<label class="form-label d-block" for="footer-input">Номер телефона</label>
-								<input type="text" id="footer-input" class="form-input">
+								<input type="text" id="footer-input" class="form-input form-input__footer">
 							</div>
 							<div class="txt-center pb-md-60">
 								<input type="submit" name="submit" class="btn btn_transparent btn_style_light">
