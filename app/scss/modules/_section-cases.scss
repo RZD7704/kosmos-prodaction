@@ -1,0 +1,21 @@
+
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    &__btn-slider {
+        background-color: transparent;
+        cursor: pointer;
+
+        &--icon {
+            width: 100px;
+            height: 10px;
+        }
+    }
+
+    &__btn-slider_next {
+        transform: rotate(180deg)
+    }
+}

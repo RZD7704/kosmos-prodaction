@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+	<link rel="stylesheet" href="css/libs/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -39,7 +40,19 @@
 						</li>
 					</ul>
 					<div class="phones">
-						<a href="tel:+38 050 455 75 07" class="phones__link">+38 050 455 75 07</a>
+						<a href="tel:+38 050 455 75 07" class="phones__link">
+							<svg class="phones__link--icon">
+								<use xlink:href="images/sprite.svg#phones-svg"></use>
+							</svg>
+							+38 050 455 75 07
+						</a>
+						<a href="tel:+38 050 455 75 07" class="phones__link phones__link_reserve">
+							<svg class="phones__link--icon">
+								<use xlink:href="images/sprite.svg#phones-svg"></use>
+							</svg>
+							+38 050 455 75 07
+						</a>
+
 					</div>
 
 				</nav>
@@ -53,6 +66,14 @@
 
 		<div class="content">
 			<section class="main-banner">
+				<div class="main-banner__play-mob">
+					<button class="main-banner__play-mob--button" type="button">
+						<svg class="main-banner__play-mob--icon">
+							<use xlink:href="images/sprite.svg#play-btn-mob"></use>
+						</svg>
+						<span class="main-banner__play-mob--name">Смотреть наш ролик</span>
+					</button>
+				</div>
 				<h1 class="main-banner__headline">KOSMOS production</h1>
 				<div class="main-banner__inner">
 					<div class="main-banner-wrap">
@@ -105,25 +126,517 @@
 						</div>
 					</div>
 					<div class="banner-media">
-							<div class="banner-media__preview" style="background-image: url('images/studio-foto.jpg');">
-								<button type="button" class="banner-media__play">
-									<svg class="banner-media__play--icon">
-										<use xlink:href="images/sprite.svg#button-play"></use>
-									</svg>
-								</button>
+						<div class="banner-media__preview" style="background-image: url('images/studio-foto.jpg');">
+							<button type="button" class="banner-media__play">
+								<svg class="banner-media__play--icon">
+									<use xlink:href="images/sprite.svg#button-play"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_theme_dark section-cases">
+				<div class="section__hashtag section__hashtag_theme_dark">
+					<div class="section__hashtag--name">#Кейсы</div>
+				</div>
+				<div class="section-header">
+					<button class="section-header__btn-slider section-header__btn-slider_prev section-header__btn-slider_prev-cases">
+						<svg class="section-header__btn-slider--icon">
+							<use xlink:href="images/sprite.svg#arr-slider"></use>
+						</svg>
+					</button>
+					<h2 class="section__headline section__headline_dark">Кейсы</h2>
+					<button class="section-header__btn-slider section-header__btn-slider_next section-header__btn-slider_next-cases">
+						<svg class="section-header__btn-slider--icon">
+							<use xlink:href="images/sprite.svg#arr-slider"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="section__inner">
+					<div class="slider slider__cases swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
 							</div>
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
+							</div>
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
+							</div>
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
+							</div>
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
+							</div>
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
+							</div>
+							<div class="swiper-slide slider__wgt">
+								<div class="slider__wgt--img-wrap">
+									<img class="slider__wgt--img" src="images/photo-slider1.png" alt="Logo">
+								</div>
+								<div class="slider__wgt--contact">
+									<h3 class="slider__wgt--contact-title">Для Вaxter</h3>
+									<p class="slider__wgt--contact-exerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_theme_light section-about">
+				<div class="section__hashtag section__hashtag_theme_light">
+					<div class="section__hashtag--name">#Кейсы</div>
+				</div>
+
+				<div class="section__inner section__inner_p_right">
+					<div class="section-about__header">
+						<h2 class="section-about__headline">Kosmos Production</h2>
+						<p class="section-about__description">Мы молодая студия продакшна, которая создает фото и видео для торговых онлайн-площадок и маркетплейсов. В нашем архиве множество кейсов с товарами разной тематики (техника, аксессуары, одежда, обувь, товары для дома, food photo и прочее).</p>
+					</div>
+					<div class="advantages">
+						<h3 class="advantages__headline">Наши преимущества:</h3>
+						<div class="advantages__inner">
+							<div class="advantages-description">
+								<div class="advantages-description__wgt">
+									<div class="advantages-description__wgt--headline">Быстро</div>
+									<p class="advantages-description__wgt--txt">Вы отправляете нам товар и через 3 дня получаете новый контент для вашей онлайн-площадки. </p>
+								</div>
+								<div class="advantages-description__wgt">
+									<div class="advantages-description__wgt--headline">Профессионально</div>
+									<p class="advantages-description__wgt--txt">Создаем продающий контент, который увеличит количество покупателей вашего товара.</p>
+								</div>
+								<div class="advantages-description__wgt">
+									<div class="advantages-description__wgt--headline">Доступно</div>
+									<p class="advantages-description__wgt--txt">Цена за услуги ниже среднерыночной в 2-3 раза.</p>
+								</div>
+							</div>
+							<div class="advantages-points">
+								<div class="advantages-points__wgt">
+									<div class="advantages-points__wgt--count">
+										<span class="advantages-points__wgt--count-num">3</span>
+										<span class="advantages-points__wgt--count-txt">года</span>
+									</div>
+									<p class="advantages-points__wgt--description">создаём крутые кейсы для онлайн-магазинов</p>
+								</div>
+								<div class="advantages-points__wgt">
+									<div class="advantages-points__wgt--count">
+										<span class="advantages-points__wgt--count-num">10</span>
+										<span class="advantages-points__wgt--count-txt">профессионалов</span>
+									</div>
+									<p class="advantages-points__wgt--description">которые любят свою работу и знают в ней толк</p>
+								</div>
+								<div class="advantages-points__wgt">
+									<div class="advantages-points__wgt--count">
+										<span class="advantages-points__wgt--count-num">500</span>
+										<span class="advantages-points__wgt--count-txt">клиентов</span>
+									</div>
+									<p class="advantages-points__wgt--description">могут похвастаться крутыми кейсами со своим товаром</p>
+								</div>
+								<div class="advantages-points__wgt">
+									<div class="advantages-points__wgt--count">
+										<span class="advantages-points__wgt--count-num">3000</span>
+										<span class="advantages-points__wgt--count-txt">товаров</span>
+									</div>
+									<p class="advantages-points__wgt--description">было отснято в стенах нашей студии за этот год</p>
+								</div>
+							</div>
+						</div>
 
 					</div>
 				</div>
+			</section>
+
+			<section class="section section_theme_dark section-reviews">
+				<div class="section__hashtag section__hashtag_theme_dark">
+					<div class="section__hashtag--name">#Отзывы</div>
+				</div>
+				<div class="section-header">
+					<button class="section-header__btn-slider section-header__btn-slider_prev section-header__btn-slider_prev-reviews">
+						<svg class="section-header__btn-slider--icon">
+							<use xlink:href="images/sprite.svg#arr-slider"></use>
+						</svg>
+					</button>
+					<h2 class="section__headline section__headline_dark">Кейсы</h2>
+					<button class="section-header__btn-slider section-header__btn-slider_next section-header__btn-slider_next-reviews">
+						<svg class="section-header__btn-slider--icon">
+							<use xlink:href="images/sprite.svg#arr-slider"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="section__inner">
+					<div class="slider-reviews swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slider-reviews__wgt">
+								<div class="slider-reviews__wgt--info">
+									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
+									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+										дуже весняному декорі. Вартість за годину 1500 грн.</p>
 
 
+									<div class="slider-reviews__wgt--info-case">
+										Кейс:
+										<a class="slider-reviews__wgt--info-link" href="#">Лукбук для коллекции ORF</a>
+									</div>
+								</div>
+
+								<div class="slider slider-reviews__cases swiper-container">
+									<div class="swiper-wrapper slider-reviews__cases-wrap">
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+									</div>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper-slide slider-reviews__wgt">
+								<div class="slider-reviews__wgt--info">
+									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
+									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+										дуже весняному декорі. Вартість за годину 1500 грн.</p>
+
+
+									<div class="slider-reviews__wgt--info-case">
+										Кейс:
+										<a class="slider-reviews__wgt--info-link" href="#">Лукбук для коллекции ORF</a>
+									</div>
+								</div>
+
+								<div class="slider slider-reviews__cases swiper-container">
+									<div class="swiper-wrapper slider-reviews__cases-wrap">
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+									</div>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper-slide slider-reviews__wgt">
+								<div class="slider-reviews__wgt--info">
+									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
+									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+										дуже весняному декорі. Вартість за годину 1500 грн.</p>
+
+
+									<div class="slider-reviews__wgt--info-case">
+										Кейс:
+										<a class="slider-reviews__wgt--info-link" href="#">Лукбук для коллекции ORF</a>
+									</div>
+								</div>
+
+								<div class="slider slider-reviews__cases swiper-container">
+									<div class="swiper-wrapper slider-reviews__cases-wrap">
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+									</div>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper-slide slider-reviews__wgt">
+								<div class="slider-reviews__wgt--info">
+									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
+									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+										дуже весняному декорі. Вартість за годину 1500 грн.</p>
+
+
+									<div class="slider-reviews__wgt--info-case">
+										Кейс:
+										<a class="slider-reviews__wgt--info-link" href="#">Лукбук для коллекции ORF</a>
+									</div>
+								</div>
+
+								<div class="slider slider-reviews__cases swiper-container">
+									<div class="swiper-wrapper slider-reviews__cases-wrap">
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+									</div>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper-slide slider-reviews__wgt">
+								<div class="slider-reviews__wgt--info">
+									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
+									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+										дуже весняному декорі. Вартість за годину 1500 грн.</p>
+
+
+									<div class="slider-reviews__wgt--info-case">
+										Кейс:
+										<a class="slider-reviews__wgt--info-link" href="#">Лукбук для коллекции ORF</a>
+									</div>
+								</div>
+
+								<div class="slider slider-reviews__cases swiper-container">
+									<div class="swiper-wrapper slider-reviews__cases-wrap">
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+										<div class="swiper-slide slider__wgt">
+											<div class="slider__wgt--img-wrap slider__wgt--img-wrap_pb_none">
+												<img class="slider__wgt--img" src="images/cases-review.png" alt="Logo">
+											</div>
+										</div>
+									</div>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+										<svg class="slider-reviews__cases--btn-icon">
+											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 
 
 		<footer class="footer">
 			<div class="container">
-
 				<div class="footer__top">
 					<div class="footer__wgt footer__wgt_callback">
 						<h3 class="footer__headline">Закажите обратный звонок</h3>
@@ -197,14 +710,12 @@
 							</div>
 					</div>
 				</div>
-			
 			</div>
-
 		</footer>
 
 	</div>
 	
-
+	<script src="js/libs/swiper.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>

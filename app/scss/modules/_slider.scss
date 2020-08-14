@@ -1,0 +1,32 @@
+.slider {
+
+    &__wgt {
+
+        &--img-wrap {
+            padding-bottom: 40px;
+        }
+
+        &--img-wrap_pb_none {
+            padding-bottom: 0;
+        }
+
+        &--img {
+            width: 100%;
+        }
+
+        &--contact-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.02em;
+
+            padding-bottom: 25px;
+        }
+
+        &--contact-exerpt {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.01em;  
+        }
+    }
+} 

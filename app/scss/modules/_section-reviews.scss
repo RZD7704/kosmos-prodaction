@@ -1,0 +1,81 @@
+.slider-reviews {
+    &__wgt {
+
+        &--info {
+            width: 70%;
+            @media (min-width: 992px) {
+                width: 80%;
+            }
+        }
+
+        &--info-date {
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+        }
+
+        &--info-name {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            padding-bottom: 5px;
+
+        }
+
+        &--info-review {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            padding-bottom: 40px;
+        }
+
+        &--info-case {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            padding-bottom: 25px;
+        }
+
+        &--info-link {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #FF4500;
+            text-decoration: none;
+        }
+    }
+}
+
+.slider-reviews__cases {
+    position: relative;
+    line-height: 0;
+}
+
+.slider-reviews__cases--btn {
+    background-color: transparent;
+    height: 100%;
+    cursor: pointer;
+    width: 30px;
+    background: rgba(170, 175, 190, 0.58);
+}
+
+.slider-reviews__cases--btn_prev {
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    transform: rotate(-180deg);
+}
+
+.slider-reviews__cases--btn_next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.slider-reviews__cases--btn-icon {
+    width: 15px;
+    height: 25px;
+}

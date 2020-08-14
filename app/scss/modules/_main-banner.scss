@@ -7,11 +7,16 @@
 
     &__headline {
         font-weight: 900;
-        font-size: 68px;
+        font-size: 38px;
         line-height: 60px;
         letter-spacing: 0.02em;
         color: #DEDEDE;
-        padding: 70px    0 0 30px;
+        padding: 0 0 0 30px;
+
+        @media (min-width: 992px) {
+            font-size: 68px;
+            padding-top: 70px;
+        }
 
     }
 
@@ -23,12 +28,43 @@
         color: #DEDEDE;
     }
 
+    &__play-mob {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+
+        &--button {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &--icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 20px;
+        }
+
+        &--name {
+            color: #DEDEDE;
+        }
+    }
+
 }
 
 .main-banner-wrap {
-    flex: 0 0 40%;
-    max-width: 40%;
-}    // min-height: 100%;
+    width: 100%;
+
+    @media (min-width: 992px) {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}    
 
 
 .banner-contact {
@@ -69,6 +105,12 @@
             line-height: 24px;
             letter-spacing: 0.02em;
             color: #17181B; 
+
+            display: none;
+
+            @media (min-width: 576px) {
+                display: block;
+            }
         }
     }
 }
@@ -76,6 +118,11 @@
 .banner-media {
     flex: 0 0 60%;
     max-width: 60%;
+    display: none;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
     &__preview{
         height: 100%;
         background-size: cover;
@@ -85,7 +132,7 @@
     }
 
     &__play {
-        z-index: 100;
+        z-index: 99;
         position: absolute;
         background-color: transparent;
         top: 50%;
