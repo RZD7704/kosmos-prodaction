@@ -1,3 +1,5 @@
+'use strict';
+
 var swiper1 = new Swiper('.slider__cases', {
   slidesPerView: 1,
   spaceBetween: 90,
@@ -78,6 +80,41 @@ var swiper3 = new Swiper('.slider-reviews__cases', {
   },
   allowTouchMove: true,
 });
+
+var swiper4 = new Swiper('.slider__instagram', {
+  slidesPerView: 1,
+  spaceBetween: 90,
+  navigation: {
+    nextEl: '.section-header__btn-slider_next-cases',
+    prevEl: '.section-header__btn-slider_prev-cases',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+      },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 20
+      },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
+});
+
 
 
 
