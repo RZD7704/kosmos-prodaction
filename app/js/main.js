@@ -30,6 +30,10 @@ var swiper1 = new Swiper('.slider__cases', {
     1200: {
       slidesPerView: 4,
       spaceBetween: 40
+    },
+    2240: {
+      slidesPerView: 5,
+      spaceBetween: 60
     }
   }
 });
@@ -76,6 +80,10 @@ var swiper3 = new Swiper('.slider-reviews__cases', {
     1200: {
       slidesPerView: 4,
       spaceBetween: 40
+    },
+    2240: {
+      slidesPerView: 5,
+      spaceBetween: 60
     }
   },
   allowTouchMove: true,
@@ -111,6 +119,10 @@ var swiper4 = new Swiper('.slider__instagram', {
     1200: {
       slidesPerView: 4,
       spaceBetween: 40
+    },
+    2240: {
+      slidesPerView: 5,
+      spaceBetween: 60
     }
   }
 });
