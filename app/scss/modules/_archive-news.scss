@@ -1,0 +1,12 @@
+.news-row {
+    position: relative;
+    padding-left: 15px;
+    padding-bottom: 100px;
+    @media (min-width: 992px) {
+        padding-left: 150px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-left: 250px;
+    }
+}
