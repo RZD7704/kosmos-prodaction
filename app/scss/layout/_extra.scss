@@ -77,6 +77,16 @@
     background-color: transparent;
 }
 
+.btn_filled {
+    background: #FF4500;
+    color: #FDFDFD !important;
+    
+    &:hover {
+        border: 1px solid #CC3700!important;
+        background: #CC3700!important;
+    }
+}
+
 .btn_style_light {
     border: 1px solid #DEDEDE;
     color: #DEDEDE;
@@ -103,7 +113,7 @@
 
     &:hover {
         background-color: #FF4500;
-        color: #17181B;
+        color: #D5D5D5;
     }
 }
 
@@ -166,14 +176,14 @@
         }
     }
 
-    &__inner_pl_medium {
+    &__inner_pl_30 {
         padding-left: 15px;
         @media (min-width: 992px) {
             padding-left: 30px;
         }
     }
 
-    &__inner_pr_medium {
+    &__inner_pr_30 {
         padding-right: 15px;
         @media (min-width: 992px) {
             padding-right: 30px;
