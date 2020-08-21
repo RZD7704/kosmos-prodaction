@@ -1,7 +1,7 @@
 .ticker {
     display: flex;
     overflow: hidden;
-
+    justify-content: center;
     &__item {
         padding: 0 30px;
 

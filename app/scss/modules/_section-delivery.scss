@@ -1,0 +1,122 @@
+.description-delivery {
+    padding-bottom: 100px;
+
+    &__headline {
+        padding-bottom: 25px;
+    }
+
+    &__txt {
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #FDFDFD;
+    }
+}
+
+.section-delivery {
+    &__nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            width: 600px;
+        }
+
+    }
+    
+    &__nav-item {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+
+        @media (min-width: 576px) {
+            width: 50%;
+            padding-bottom: 0;
+        }
+    }
+
+    &__nav-btn {
+        display: block;
+    }
+}
+
+.stages-delivery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    &__item {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 40px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            width: 200px;
+            padding-bottom: 0;
+        }
+
+        @media (min-width: 1200px) {
+            width: 260px;
+        }
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 30px;
+
+        @media (min-width: 992px) {
+            width: 84px;
+            height: 84px;
+        }
+    }
+
+    &__description {
+        &--title {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: #FDFDFD;
+
+            @media (min-width: 992px) {
+                font-size: 20px;
+            }
+        }
+
+        &--subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #FDFDFD;
+
+            @media (min-width: 992px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__arrow {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+        &--icon {
+            width: 60px;
+            height: 10px;
+            margin-top: 40px;
+            @media (min-width: 992px) {
+                width: 150px;
+                height: 10px;
+            }
+        }
+    }
+}

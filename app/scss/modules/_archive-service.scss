@@ -152,13 +152,18 @@
 }
 
 .service-wgt__img-wrap_reverse {
-    order: 13;
+    @media (min-width: 992px) {
+        order: 13;
+    }
 }
 
 .service-wgt__content_reverse {
-    order: 1;
-    padding-right: 30px;
-    padding-left: 0;
+  
+    @media (min-width: 992px) {
+        order: 1;
+        padding-right: 30px;
+        padding-left: 0;
+    }
 }
 
 .label-wgt_reverse {
