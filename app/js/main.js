@@ -203,6 +203,19 @@ var swiper6 = new Swiper('.slider__single-service', {
   }
 });
 
+var swiper = new Swiper('.post-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: '.post-slider-pagination',
+    type: 'progressbar',
+  },
+  navigation: {
+    nextEl: '.post-slider__nav-btn_next',
+    prevEl: '.post-slider__nav-btn_prev',
+  },
+});
+
 
 
 

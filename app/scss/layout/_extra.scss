@@ -62,7 +62,7 @@
     padding: 15px 20px;
     cursor: pointer;
     transition: all .3s;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.02em;
     color: #DEDEDE;
     text-decoration: none;
@@ -78,6 +78,7 @@
 }
 
 .btn_filled {
+    border: 1px solid #FF4500;
     background: #FF4500;
     color: #FDFDFD !important;
     
@@ -115,6 +116,15 @@
         background-color: #FF4500;
         color: #D5D5D5;
     }
+}
+
+.btn_style_grey {
+    color: #A1A1A1;
+    
+}
+
+.btn_style_border-none {
+    border: none;
 }
 
 .section {

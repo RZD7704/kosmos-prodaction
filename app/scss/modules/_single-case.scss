@@ -1,0 +1,131 @@
+.post-slider {
+    padding-bottom: 30px;
+    margin-left: 0; 
+    @media (min-width: 992px) {
+        width: 545px;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        width: 650px;
+    }
+    &__wgt {
+        &--img-wrap {
+            // width: 100%;
+        }
+
+        &--img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+    }
+    
+    &__nav {
+        display: flex;
+        width: 100%;
+        padding-bottom: 70px;
+    }
+
+    &_nav_mob {
+        width: 100%;
+    }
+
+    &__nav-item {
+        width: 50%;
+    }
+
+    &__nav-btn {
+        // width: 50%;
+        // @media (min-width: 768px) {
+        //     width: 350px;
+        // }
+    }
+
+    &__nav-btn_next {
+        border: none;
+
+        &:hover {
+            border: none!important;
+        }
+    }
+
+    &__nav-btn_prev:hover  {
+        background: #FF4500;
+        color: #FDFDFD;
+    } 
+
+
+}
+
+.post-slider__nav_mob {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.post-slider__nav_desc {
+    display: none;
+    @media (min-width: 992px) {
+        display: flex;
+    }
+}
+
+.single-case {
+    &__inner {
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+    
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    &__content {
+        width: 100%;
+        background: #17181B;
+        @media (min-width: 992px) {
+            width: 40%;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #DEDEDE;
+        padding-bottom: 25px;
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #DEDEDE;
+        padding-bottom: 70px;
+    }
+
+    &__nav {
+
+    }
+
+    &__nav-item {
+
+    }
+} 
+
+.post-slider-pagination {
+    position: relative;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+
+}
+
+.post-slider-pagination span {
+    background: #FF4500!important;
+}
+
+

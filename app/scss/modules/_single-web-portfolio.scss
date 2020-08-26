@@ -1,0 +1,43 @@
+.single-web-portfilo {
+    &__header {
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        color: #DEDEDE;
+        padding-bottom: 30px;
+        @media (min-width: 992px) {
+            font-size: 36px;
+        }
+    }
+    
+    &__description {
+        font-size: 14px;
+        color: #FDFDFD;
+        padding-bottom: 30px;
+        @media (min-width: 992px) {
+            font-size: 16px;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        text-decoration-line: underline;
+        color: #FDFDFD;
+        @media (min-width: 992px) {
+            font-size: 16px;
+        }
+    }
+
+    &__content {
+
+        &--photo {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
