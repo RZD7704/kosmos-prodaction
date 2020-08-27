@@ -6,14 +6,24 @@
             padding-left: 150px;
         }
 
-        @media (min-width: 1200px) {
-            padding-left: 250px;
-        }
-
         @media (min-width: 992px) {
             padding-right: 70px;
 
         }
+
+        @media (min-width: 1200px) {
+            padding-left: 250px;
+        }
+    }
+
+    &__inner_container {
+        @media (min-width: 1920px) {
+            max-width: 1250px;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 0 auto;
+        }
+
     }
 
     &__img-wrap {
@@ -24,6 +34,7 @@
         display: block;
         width: 100%;
         height: auto;
+        max-height: 400px;
     }
 
     &__content {
