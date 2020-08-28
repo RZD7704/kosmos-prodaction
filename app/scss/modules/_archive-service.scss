@@ -83,6 +83,7 @@
     position: absolute;
     top: 40px;
     left: -10px;
+    z-index: 999;
     &__item {
         text-align: center;
     }

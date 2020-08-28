@@ -99,6 +99,10 @@
         letter-spacing: 0.02em;
         color: #DEDEDE;
         text-decoration: none;
+        transition: all .3s;
+        &:hover {
+            color: #FF4500;
+        }
     }
 }
 
@@ -118,6 +122,11 @@
         margin-bottom: 30px;
         display: flex;
         align-items: center;
+        transition: all .3s;
+
+        &:hover {
+            color: #FF4500;
+        }
         @media (min-width: 992px) {
             margin-right: 0;
             margin-bottom: 0;

@@ -104,10 +104,15 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        &--photo {
-            display: block;
-            height: auto;
-            width: 100%;
+
+        &--blackout {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(32,32,32,0.13);
+            z-index: 1;
         }
     }
 
@@ -115,6 +120,7 @@
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
+        z-index: 999;
 
         @media (max-width: 991px) {
             padding-left: 0;

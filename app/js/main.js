@@ -208,7 +208,7 @@ var swiper = new Swiper('.post-slider', {
   spaceBetween: 10,
   pagination: {
     el: '.post-slider-pagination',
-    type: 'progressbar',
+    type: 'progressbar'
   },
   navigation: {
     nextEl: '.post-slider__nav-btn_next',
@@ -216,70 +216,170 @@ var swiper = new Swiper('.post-slider', {
   },
 });
 
-const time = 1000;
-const step = 10;
 
-function outNum(num, elem) {
-  let element = document.querySelector('#' + elem);
-  let number = 0;
-
-  let t = Math.round(time/(num/step));
-  let interval = setInterval(() => {
-    number = number + step;
-    if(number == num) {
-      clearInterval(interval);
-    }
-    element.innerHTML = number;
-  },
-  t);
+var counter = $('.label-wgt__active-num');
+counter.html('01');
+var totalNum = $('.label-wgt__total-num');
+var total = $('.swiper-slide').length;
+if(total < 10){
+  total = '0' + total;
 }
-
-
-
-var element = document.querySelector('#target');
-
-var Visible = function (target) {
-  // Все позиции элемента
-  var targetPosition = {
-      top: window.pageYOffset + target.getBoundingClientRect().top,
-      left: window.pageXOffset + target.getBoundingClientRect().left,
-      right: window.pageXOffset + target.getBoundingClientRect().right,
-      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
-    },
-    // Получаем позиции окна
-    windowPosition = {
-      top: window.pageYOffset,
-      left: window.pageXOffset,
-      right: window.pageXOffset + document.documentElement.clientWidth,
-      bottom: window.pageYOffset + document.documentElement.clientHeight
-    };
-
-  if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
-    targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
-    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
-    targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
-    // Если элемент полностью видно, то запускаем следующий код
-    outNum(50, 'out-1');
-    outNum(500, 'out-2');
-    outNum(1000, 'out-3');
-    outNum(3000, 'out-4');
-  } else {
-    // Если элемент не видно, то запускаем этот код
-    console.clear();
-  };
-};
-
-// Запускаем функцию при прокрутке страницы
-window.addEventListener('scroll', function() {
-  Visible (element);
+totalNum.html(total);
+swiper.on('transitionStart', function () {
+  var index = this.activeIndex + 1;
+  if(index < 10){
+    index = '0' + index;
+  }
+  counter.html(index);
 });
 
-// А также запустим функцию сразу. А то вдруг, элемент изначально видно
-Visible (element);
+// var time = 1000;
+// var step = 10;
+
+// function outNum(elems) {
+//   var elements = document.querySelectorAll(elems);
+//   var numbers = [];
+//   var nums = [];
+//   for(var i = 0; i < elements.length; i++){
+//     nums.push(elements[i].dataset.num);
+//     var t = Math.round(time/(nums[i]/step));
+//     function test(i){
+//     var interval = setInterval(function(){
+//       numbers[i] = numbers[i] + step;
+//       if(numbers[i] == nums[i]) {
+//         clearInterval(interval);
+//       }
+//       elements[i].innerHTML = numbers[i];
+//     },
+//     t);
+//   }test(i);
+//   }
+// }
 
 
 
- 
+// var element = document.querySelector('.advantages-points');
+// function visible () {
+//   // Все позиции элемента
+//   var targetPosition = {
+//       top: window.pageYOffset + element.getBoundingClientRect().top,
+//       left: window.pageXOffset + element.getBoundingClientRect().left,
+//       right: window.pageXOffset + element.getBoundingClientRect().right,
+//       bottom: window.pageYOffset + element.getBoundingClientRect().bottom
+//     },
+//     // Получаем позиции окна
+//     windowPosition = {
+//       top: window.pageYOffset,
+//       left: window.pageXOffset,
+//       right: window.pageXOffset + document.documentElement.clientWidth,
+//       bottom: window.pageYOffset + document.documentElement.clientHeight
+//     };
+    
+//   if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+//     targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+//     targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+//     targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+//     // Если элемент полностью видно, то запускаем следующий код
+//         outNum('.advantages-counter');
+//         window.removeEventListener('scroll', visible);
+//   } else {
+//     // Если элемент не видно, то запускаем этот код
+//     console.clear();
+//   };
+// };
+
+// // Запускаем функцию при прокрутке страницы
+// window.addEventListener('scroll', visible);
+
+// // А также запустим функцию сразу. А то вдруг, элемент изначально видно
+// visible ();
+
+// var number = document.querySelectorAll('.advantages-counter'),
+//     numberTop = number.getBoundingClientRect().top,
+//     start = +number.innerHTML, end = +number.dataset.max;
+
+// window.addEventListener('scroll', function onScroll() {
+//     if(window.pageYOffset > numberTop - window.innerHeight / 2 ) {
+//       this.removeEventListener('scroll', onScroll);
+//       var interval = setInterval(function() {
+//         number.innerHTML = ++start;
+//         if(start == end) {
+//           clearInterval(interval);
+//         }
+//       }, 5);
+//     });
+// });
+
+
+// for ( let i of document.querySelectorAll(".advantages-counter") ) {
+
+//   let numberTop = i.getBoundingClientRect().top,
+//       start = +i.innerHTML,
+//       end = +i.dataset.max;
+
+//   window.addEventListener('scroll', function onScroll() {
+//     if(window.pageYOffset > numberTop - window.innerHeight / 1) {
+//       this.removeEventListener('scroll', onScroll);
+//       let interval = this.setInterval(function() {
+//         i.innerHTML = ++start;
+//         if(start == end) {
+//           clearInterval(interval);
+//         }
+//     }, 5);
+//     }
+//   });
+// }
+
+(function($){
+	$(document).ready(function() {
+		// Code
+    $(function () { 
+      var target_block = $(".section-about"); // Ищем блок 
+      var blockStatus = true;  
+      $(window).scroll(function() { 
+        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height())); 
+        if(scrollEvent && blockStatus) {  
+          blockStatus = false; 
+          $('.advantages-counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            
+            $({ countNum: $this.text()}).animate({
+              countNum: countTo
+            },
+          
+            {
+          
+              duration: 2500,
+              easing:'linear',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+                //alert('finished');
+              }
+          
+            });  
+            
+            
+          
+          });
+        } 
+      }); 
+    }); 
+
+    $(function(){
+      $('#services-btn').hover(function(){
+        $('.mega-menu').addClass('active'); //показываем всплывающее окно
+      });
+      $('.mega-menu__link').mouseleave(function() {
+        $('.mega-menu').removeClass('active');
+      });
+    });
+
+	});
+})(jQuery);
 
 
 
