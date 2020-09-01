@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 
 	<link rel="stylesheet" href="css/libs/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
+
 <body>
 
 	<div class="wrapper">
@@ -24,7 +26,7 @@
 				<div class="header__item logotype">
 					<a href="index.html" class="logotype__link">
 						<img src="images/Logo-png.png" alt="Logo">
-					</a>	
+					</a>
 				</div>
 
 				<nav class="header__nav">
@@ -56,7 +58,7 @@
 											<li class="mega-list__item">
 												<a class="mega-list__link" href="#">Сайты под ключ</a>
 											</li>
-		
+
 										</ul>
 										<a class="link link_theme_orange" href="#">Все услуги</a>
 									</div>
@@ -138,6 +140,13 @@
 
 		<div class="content">
 			<section class="main-banner">
+				<!-- particles.js container -->
+				<div class="particles" id="particles-js"></div>
+
+				<!-- stats - count particles
+				<div class="count-particles">
+					<span class="js-count-particles">--</span> particles
+				</div> -->
 				<div class="main-banner__play-mob">
 					<button class="main-banner__play-mob--button" type="button">
 						<svg class="main-banner__play-mob--icon">
@@ -146,28 +155,42 @@
 						<span class="main-banner__play-mob--name">Смотреть наш ролик</span>
 					</button>
 				</div>
-				<h1 class="main-banner__headline">KOSMOS production</h1>
+				<h1 class="main-banner__headline particles-rel">KOSMOS production</h1>
 				<div class="main-banner__inner">
 					<div class="main-banner-wrap">
 						<div class="banner-contact">
-							<h3 class="main-banner__subheading">Нужен качественный фото или видео контент для вашего продукта?</h3>
+							<h3 class="main-banner__subheading particles-rel">Нужен качественный фото или видео контент
+								для вашего
+								продукта?</h3>
 							<form class="banner-form" action="#">
-								<div class="field-wrap">
+								<div class="field-wrap particles-rel">
 									<label class="form-label d-block" for="banner-name">Имя</label>
 									<input type="text" id="banner-name" class="form-input form-input__banner">
+								</div>
 
+								<div class="field-wrap particles-rel">
 									<label class="form-label d-block" for="banner-number">Номер телефона</label>
 									<input type="text" id="banner-number" class="form-input form-input__banner">
+								</div>
+								<div class="field-wrap particles-rel particles-rel_25">
+									<label class="form-label d-block" for="banner-select">Желаемая услуга</label>
+									<select id="banner-select" name="sources" class="custom-select sources"
+										placeholder="Услуги">
+										<option value="profile">Предметная съёмка</option>
+										<option value="word">Создание сайта</option>
+										<option value="hashtag">Съёмка 360</option>
+										<option value="hashtag">Презентационное видео</option>
+										<option value="hashtag">Food cъёмка</option>
 
-									<label class="form-label d-block" for="banner-service">Желаемая услуга</label>  
-									<input type="text" id="banner-service" class="form-input form-input__banner">
+									</select>
 								</div>
 								<div class="txt-center">
-									<input type="submit" name="submit" class="btn btn_transparent btn_style_light" value="Заказать">
+									<input type="submit" name="submit"
+										class="btn particles-rel btn_transparent btn_style_light" value="Заказать">
 								</div>
 							</form>
 						</div>
-						<div class="banner-social-wrap">
+						<div class="banner-social-wrap particles-rel">
 							<ul class="banner-social">
 								<li class="banner-social__item">
 									<a href="#" class="banner-social__link">
@@ -197,7 +220,8 @@
 						</div>
 					</div>
 					<div class="banner-media">
-						<div class="banner-media__preview" style="background-image: url('images/studio-foto.jpg');">
+						<div class="banner-media__preview particles-rel"
+							style="background-image: url('images/studio-foto.jpg');">
 							<button type="button" class="banner-media__play">
 								<svg class="banner-media__play--icon">
 									<use xlink:href="images/sprite.svg#button-play"></use>
@@ -213,13 +237,15 @@
 					<div class="section__hashtag--name">#Кейсы</div>
 				</div>
 				<div class="section-header">
-					<button class="section-header__btn-slider section-header__btn-slider_prev section-header__btn-slider_prev-cases">
+					<button
+						class="section-header__btn-slider section-header__btn-slider_prev section-header__btn-slider_prev-cases">
 						<svg class="section-header__btn-slider--icon">
 							<use xlink:href="images/sprite.svg#arr-slider"></use>
 						</svg>
 					</button>
 					<h2 class="section__headline section__headline_dark">Кейсы</h2>
-					<button class="section-header__btn-slider section-header__btn-slider_next section-header__btn-slider_next-cases">
+					<button
+						class="section-header__btn-slider section-header__btn-slider_next section-header__btn-slider_next-cases">
 						<svg class="section-header__btn-slider--icon">
 							<use xlink:href="images/sprite.svg#arr-slider"></use>
 						</svg>
@@ -234,7 +260,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -243,7 +271,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -252,7 +282,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -261,7 +293,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -270,7 +304,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -279,7 +315,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -288,7 +326,9 @@
 								</div>
 								<div class="slider__wgt--content">
 									<h3 class="slider__wgt--content-title">Для Вaxter</h3>
-									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской косметики для Baxter является презентация новой колекции укладочных средств для барбершопов.</p>
+									<p class="slider__wgt--content-excerpt">Основная цель предметной съёмки мужской
+										косметики для Baxter является презентация новой колекции укладочных средств для
+										барбершопов.</p>
 								</div>
 							</div>
 						</div>
@@ -304,7 +344,10 @@
 				<div class="section__inner section__inner_p_right">
 					<div class="section-about__header">
 						<h2 class="section-about__headline">Kosmos Production</h2>
-						<p class="section-about__description">Мы молодая студия продакшна, которая создает фото и видео для торговых онлайн-площадок и маркетплейсов. В нашем архиве множество кейсов с товарами разной тематики (техника, аксессуары, одежда, обувь, товары для дома, food photo и прочее).</p>
+						<p class="section-about__description">Мы молодая студия продакшна, которая создает фото и видео
+							для торговых онлайн-площадок и маркетплейсов. В нашем архиве множество кейсов с товарами
+							разной тематики (техника, аксессуары, одежда, обувь, товары для дома, food photo и прочее).
+						</p>
 					</div>
 					<div class="advantages">
 						<h3 class="advantages__headline">Наши преимущества:</h3>
@@ -312,45 +355,60 @@
 							<div class="advantages-description">
 								<div class="advantages-description__wgt">
 									<div class="advantages-description__wgt--headline">Быстро</div>
-									<p class="advantages-description__wgt--txt">Вы отправляете нам товар и через 3 дня получаете новый контент для вашей онлайн-площадки. </p>
+									<p class="advantages-description__wgt--txt">Вы отправляете нам товар и через 3 дня
+										получаете новый контент для вашей онлайн-площадки. </p>
 								</div>
 								<div class="advantages-description__wgt">
 									<div class="advantages-description__wgt--headline">Профессионально</div>
-									<p class="advantages-description__wgt--txt">Создаем продающий контент, который увеличит количество покупателей вашего товара.</p>
+									<p class="advantages-description__wgt--txt">Создаем продающий контент, который
+										увеличит количество покупателей вашего товара.</p>
 								</div>
 								<div class="advantages-description__wgt">
 									<div class="advantages-description__wgt--headline">Доступно</div>
-									<p class="advantages-description__wgt--txt">Цена за услуги ниже среднерыночной в 2-3 раза.</p>
+									<p class="advantages-description__wgt--txt">Цена за услуги ниже среднерыночной в 2-3
+										раза.</p>
 								</div>
 							</div>
 							<div class="advantages-points">
 								<div class="advantages-points__wgt">
 									<div class="advantages-points__wgt--count">
-										<div class="advantages-points__wgt--count-num advantages-counter" data-count="3">0</div>
+										<div class="advantages-points__wgt--count-num advantages-counter"
+											data-count="3">0
+										</div>
 										<span class="advantages-points__wgt--count-txt">года</span>
 									</div>
-									<p class="advantages-points__wgt--description">создаём крутые кейсы для онлайн-магазинов</p>
+									<p class="advantages-points__wgt--description">создаём крутые кейсы для
+										онлайн-магазинов</p>
 								</div>
 								<div class="advantages-points__wgt">
 									<div class="advantages-points__wgt--count">
-										<div class="advantages-points__wgt--count-num advantages-counter" data-count="500">0</div>
+										<div class="advantages-points__wgt--count-num advantages-counter"
+											data-count="500">0
+										</div>
 										<span class="advantages-points__wgt--count-txt">профессионалов</span>
 									</div>
-									<p class="advantages-points__wgt--description">которые любят свою работу и знают в ней толк</p>
+									<p class="advantages-points__wgt--description">которые любят свою работу и знают в
+										ней толк</p>
 								</div>
 								<div class="advantages-points__wgt">
 									<div class="advantages-points__wgt--count">
-										<div class="advantages-points__wgt--count-num advantages-counter" data-count="700">0</div>
+										<div class="advantages-points__wgt--count-num advantages-counter"
+											data-count="700">0
+										</div>
 										<span class="advantages-points__wgt--count-txt">клиентов</span>
 									</div>
-									<p class="advantages-points__wgt--description">могут похвастаться крутыми кейсами со своим товаром</p>
+									<p class="advantages-points__wgt--description">могут похвастаться крутыми кейсами со
+										своим товаром</p>
 								</div>
 								<div class="advantages-points__wgt">
 									<div class="advantages-points__wgt--count">
-										<div class="advantages-points__wgt--count-num advantages-counter" data-count="2000">0</div>
+										<div class="advantages-points__wgt--count-num advantages-counter"
+											data-count="2000">
+											0</div>
 										<span class="advantages-points__wgt--count-txt">товаров</span>
 									</div>
-									<p class="advantages-points__wgt--description">было отснято в стенах нашей студии за этот год</p>
+									<p class="advantages-points__wgt--description">было отснято в стенах нашей студии за
+										этот год</p>
 								</div>
 							</div>
 						</div>
@@ -364,13 +422,15 @@
 					<div class="section__hashtag--name">#Отзывы</div>
 				</div>
 				<div class="section-header">
-					<button class="section-header__btn-slider section-header__btn-slider_prev section-header__btn-slider_prev-reviews">
+					<button
+						class="section-header__btn-slider section-header__btn-slider_prev section-header__btn-slider_prev-reviews">
 						<svg class="section-header__btn-slider--icon">
 							<use xlink:href="images/sprite.svg#arr-slider"></use>
 						</svg>
 					</button>
 					<h2 class="section__headline section__headline_dark">Кейсы</h2>
-					<button class="section-header__btn-slider section-header__btn-slider_next section-header__btn-slider_next-reviews">
+					<button
+						class="section-header__btn-slider section-header__btn-slider_next section-header__btn-slider_next-reviews">
 						<svg class="section-header__btn-slider--icon">
 							<use xlink:href="images/sprite.svg#arr-slider"></use>
 						</svg>
@@ -383,7 +443,8 @@
 								<div class="slider-reviews__wgt--info">
 									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
 									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
-									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється
+										інтер'єр. Ми були в рожево-бузковому,
 										дуже весняному декорі. Вартість за годину 1500 грн.</p>
 
 
@@ -431,12 +492,14 @@
 											</div>
 										</div>
 									</div>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
 									</button>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
@@ -447,7 +510,8 @@
 								<div class="slider-reviews__wgt--info">
 									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
 									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
-									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється
+										інтер'єр. Ми були в рожево-бузковому,
 										дуже весняному декорі. Вартість за годину 1500 грн.</p>
 
 
@@ -495,12 +559,14 @@
 											</div>
 										</div>
 									</div>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
 									</button>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
@@ -511,7 +577,8 @@
 								<div class="slider-reviews__wgt--info">
 									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
 									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
-									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється
+										інтер'єр. Ми були в рожево-бузковому,
 										дуже весняному декорі. Вартість за годину 1500 грн.</p>
 
 
@@ -559,12 +626,14 @@
 											</div>
 										</div>
 									</div>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
 									</button>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
@@ -575,7 +644,8 @@
 								<div class="slider-reviews__wgt--info">
 									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
 									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
-									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється
+										інтер'єр. Ми були в рожево-бузковому,
 										дуже весняному декорі. Вартість за годину 1500 грн.</p>
 
 
@@ -622,12 +692,14 @@
 											</div>
 										</div>
 									</div>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
 									</button>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
@@ -638,7 +710,8 @@
 								<div class="slider-reviews__wgt--info">
 									<span class="slider-reviews__wgt--info-date">12.05.2007.</span>
 									<h4 class="slider-reviews__wgt--info-name">Алексей Калюжный</h4>
-									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється інтер'єр. Ми були в рожево-бузковому, 
+									<p class="slider-reviews__wgt--info-review">Гарна фотостудія, постійно змінюється
+										інтер'єр. Ми були в рожево-бузковому,
 										дуже весняному декорі. Вартість за годину 1500 грн.</p>
 
 
@@ -685,12 +758,14 @@
 											</div>
 										</div>
 									</div>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_prev">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
 									</button>
-									<button type="button" class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
+									<button type="button"
+										class="slider-reviews__cases--btn slider-reviews__cases--btn_next">
 										<svg class="slider-reviews__cases--btn-icon">
 											<use xlink:href="images/sprite.svg#cases-review-arr"></use>
 										</svg>
@@ -736,7 +811,7 @@
 						</div>
 						<div class="ticker__item">
 							<a class="ticker__link" href="#">Видео обзор</a>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</section>
@@ -757,32 +832,48 @@
 									<label class="form-label d-block" for="banner-number">Номер телефона</label>
 									<input type="text" id="banner-number" class="form-input form-input__banner">
 
-									<label class="form-label d-block" for="banner-service">Желаемая услуга</label>  
-									<input type="text" id="banner-service" class="form-input form-input__banner">
-									
-									<label class="form-label d-block" for="banner-service">Желаемая услуга</label>  
-									<input type="text" id="banner-service" class="form-input form-input__banner">
+									<label class="form-label d-block" for="banner-email">Почта</label>
+									<input type="text" id="banner-email" class="form-input form-input__banner">
+
+									<label class="form-label form-label_theme_orange d-block"
+										for="banner-promo">Угадайте промо-код</label>
+									<input type="text" id="banner-promo" class="form-input form-input__banner">
 								</div>
 							</div>
 							<div class="order-form__row--col">
 								<div class="field-wrap">
-									<label class="form-label d-block" for="banner-name">Имя</label>
-									<input type="text" id="banner-name" class="form-input form-input__banner">
+									<label class="form-label d-block" for="banner-service">Желаемая услуга</label>
+									<select id="banner-service" name="sources" class="custom-select sources"
+										placeholder="Услуги">
+										<option value="profile">Предметная съёмка</option>
+										<option value="word">Предметная съёмка</option>
+										<option value="hashtag">Предметная съёмка</option>
+									</select>
+									<label class="form-label d-block" for="banner-date">Желаемая дата</label>
+									<input type="text" id="banner-date" class="form-input form-input__banner">
 
-									<label class="form-label d-block" for="banner-number">Номер телефона</label>
-									<input type="text" id="banner-number" class="form-input form-input__banner">
-
-									<label class="form-label d-block" for="banner-service">Желаемая услуга</label>  
-									<input type="text" id="banner-service" class="form-input form-input__banner">
+									<label class="form-label d-block" for="banner-packages">Количество пакетов
+										услуг</label>
+									<select id="banner-packages" name="sources" class="custom-select sources"
+										placeholder="Услуги">
+										<option value="profile">1 пакет</option>
+										<option value="word">1 пакет</option>
+										<option value="hashtag">1 пакет</option>
+									</select>
 								</div>
 							</div>
 						</div>
 
-						<input class="custom-checkbox order-form__checkbox" type="checkbox" id="order" name="order" value="yes">
-						<label class="order-form__label" for="order">Согласен с правилами использования сайта</label>
+						<input class="custom-checkbox order-form__checkbox" type="checkbox" id="order" name="order"
+							value="yes">
+						<label class="order-form__label" for="order">Согласен с <button
+								class="btn-popup btn-popup__rules open-popup" data-id="popup_rules"
+								type="button">правилами
+								использования сайта</button></label>
 
 						<div class="txt-center">
-							<input class="btn btn_transparent btn_style_light" type="submit" name="submit" value="Заказать">
+							<input class="btn btn_transparent btn_style_light" type="submit" name="submit"
+								value="Заказать">
 						</div>
 					</form>
 				</div>
@@ -806,8 +897,9 @@
 									<a class="slider__wgt--content-link" href="#">
 										<h3 class="slider__wgt--content-title">@kosmos_production</h3>
 									</a>
-									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем. 
-										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и видеосъемку товаров!</p>
+									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем.
+										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и
+										видеосъемку товаров!</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -820,8 +912,9 @@
 									<a class="slider__wgt--content-link" href="#">
 										<h3 class="slider__wgt--content-title">@kosmos_production</h3>
 									</a>
-									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем. 
-										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и видеосъемку товаров!</p>
+									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем.
+										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и
+										видеосъемку товаров!</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -834,8 +927,9 @@
 									<a class="slider__wgt--content-link" href="#">
 										<h3 class="slider__wgt--content-title">@kosmos_production</h3>
 									</a>
-									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем. 
-										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и видеосъемку товаров!</p>
+									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем.
+										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и
+										видеосъемку товаров!</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -848,8 +942,9 @@
 									<a class="slider__wgt--content-link" href="#">
 										<h3 class="slider__wgt--content-title">@kosmos_production</h3>
 									</a>
-									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем. 
-										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и видеосъемку товаров!</p>
+									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем.
+										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и
+										видеосъемку товаров!</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -862,8 +957,9 @@
 									<a class="slider__wgt--content-link" href="#">
 										<h3 class="slider__wgt--content-title">@kosmos_production</h3>
 									</a>
-									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем. 
-										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и видеосъемку товаров!</p>
+									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем.
+										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и
+										видеосъемку товаров!</p>
 								</div>
 							</div>
 							<div class="swiper-slide slider__wgt">
@@ -876,8 +972,9 @@
 									<a class="slider__wgt--content-link" href="#">
 										<h3 class="slider__wgt--content-title">@kosmos_production</h3>
 									</a>
-									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем. 
-										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и видеосъемку товаров!</p>
+									<p class="slider__wgt--content-excerpt">Мы не просто фотографируем.
+										Мы передаем через снимки душу вашего бренда и изделий!Заказывайте фото- и
+										видеосъемку товаров!</p>
 								</div>
 							</div>
 						</div>
@@ -897,14 +994,18 @@
 						<div class="news-wgt__content">
 							<div class="news-wgt__date">12.06.2007</div>
 							<h3 class="news-wgt__headline">Как выбрать себе видеографа?</h3>
-							<p class="news-wgt__excerpt">Мы не просто фотографируем. Мы передаем через снимки душу вашего бренда и изделий! Заказывайте фото- и видеосъемку товаров! Мы не просто фотографируем. Мы передаем через снимки душу вашего бренда и изделий!</p>
+							<p class="news-wgt__excerpt">Мы не просто фотографируем. Мы передаем через снимки душу
+								вашего бренда и изделий! Заказывайте фото- и видеосъемку товаров! Мы не просто
+								фотографируем. Мы передаем через снимки душу вашего бренда и изделий!</p>
 							<div class="news-wgt__nav">
 								<div class="news-wgt__nav-item">
-									<a class="btn btn_transparent btn_style_orange" href="single-case.html">Читать статью</a>
+									<a class="btn btn_transparent btn_style_orange" href="faq.html">Читать
+										статью</a>
 								</div>
 								<div class="news-wgt__nav-item">
-									<a class="btn btn_transparent btn_style_light" href="single-news.html">Другие статьи</a>
-								</div>	
+									<a class="btn btn_transparent btn_style_light" href="ticker.html">Другие
+										статьи</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -914,20 +1015,31 @@
 			<section class="section section_theme_light section-cities">
 				<div class="section__inner section__inner_px_none">
 					<div class="ticker ticker-services ticker-services_right">
-						<div class="ticker__item">
-							<a class="ticker__link" href="#">Полтава</a>
-						</div>
-						<div class="ticker__item">
-							<a class="ticker__link" href="#">Минск</a>
-						</div>
-						<div class="ticker__item">
-							<a class="ticker__link" href="#">Житомир</a>
-						</div>
-						<div class="ticker__item">
-							<a class="ticker__link" href="#">Киев</a>
-						</div>
-						<div class="ticker__item">
-							<a class="ticker__link" href="#">Одесса</a>
+						<div class="ticker__list" data-ticker="list">
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Полтава</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Минск</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Житомир</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Киев</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Одесса</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Житомир</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Полтава</a>
+							</div>
+							<div class="ticker__item" data-ticker="item">
+								<a class="ticker__link" href="#">Одесса</a>
+							</div>
 						</div>
 					</div>
 					<div class="ticker ticker-services ticker-services_left">
@@ -945,7 +1057,7 @@
 						</div>
 						<div class="ticker__item">
 							<a class="ticker__link" href="#">Житомир</a>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</section>
@@ -963,7 +1075,8 @@
 								<input type="text" id="footer-input" class="form-input form-input__footer">
 							</div>
 							<div class="txt-center pb-md-60">
-								<input type="submit" name="submit" class="btn btn_transparent btn_style_light" value="Заказать">
+								<input type="submit" name="submit" class="btn btn_transparent btn_style_light"
+									value="Заказать">
 							</div>
 						</form>
 					</div>
@@ -971,7 +1084,8 @@
 						<h3 class="footer__headline">Следите за нами</h3>
 						<ul class="footer-social">
 							<li class="footer-social__item">
-								<a href="https://www.instagram.com/" target="_blank" class="footer-social__link d-flex align-items-center">
+								<a href="https://www.instagram.com/" target="_blank"
+									class="footer-social__link d-flex align-items-center">
 									<svg class="footer-social__link--icon">
 										<use xlink:href="images/sprite.svg#footer-insta-svg"></use>
 									</svg>
@@ -1006,7 +1120,8 @@
 								<a href="tel:+38 063 455 75 07" class="footer-contacts__link">+38 063 455 75 07</a>
 							</li>
 							<li class="footer-contacts__item">
-								<a href="mailto:kosmos.photo@gmail.com" class="footer-contacts__link">kosmos.photo@gmail.com</a>
+								<a href="mailto:kosmos.photo@gmail.com"
+									class="footer-contacts__link">kosmos.photo@gmail.com</a>
 							</li>
 						</ul>
 					</div>
@@ -1019,22 +1134,54 @@
 						<a class="footer__faq--link" href="#">FAQ</a>
 					</div>
 					<div class="footer__bottom--wgt footer__logo">
-							<div class="footer__logo--inner">
-								<a class="footer__logo--link" href="#">
-									<img class="footer__logo--img" src="images/footer-logo.png" alt="Logo">
-									<span class="footer__logo--txt">by Kosmos Production</span>
-								</a>
-							</div>
+						<div class="footer__logo--inner">
+							<a class="footer__logo--link" href="#">
+								<img class="footer__logo--img" src="images/footer-logo.png" alt="Logo">
+								<span class="footer__logo--txt">by Kosmos Production</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
 
-	</div> 
-	
+	</div>
+	<div id="popup_rules" class="popup popup-rules">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+			<button type="button" class="close-popup">&times;</button>
+			<h1 class="popup-rules__title">Popup 1</h1>
+			<p class="popup-rules__txt"> It has survived not only five centuries, but also the leap
+				into
+				electronic typesetting, remaining essentially unchanged. It was
+				popularised in the 1960s with the release of Letraset sheets containing
+				Lorem Ipsum passages, and more recently with desktop publishing software
+				like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="popup-rules__txt"> It has survived not only five centuries, but also the leap
+				into
+				electronic typesetting, remaining essentially unchanged. It was
+				popularised in the 1960s with the release of Letraset sheets containing
+				Lorem Ipsum passages, and more recently with desktop publishing software
+				like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="popup-rules__txt"> It has survived not only five centuries, but also the leap
+				into
+				electronic typesetting, remaining essentially unchanged. It was
+				popularised in the 1960s with the release of Letraset sheets containing
+				Lorem Ipsum passages, and more recently with desktop publishing software
+				like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div class="txt-center">
+				<label class="btn accept-popup btn_transparent btn_style_light" for="order" type="button"
+					name="submit">Принять</label>
+			</div>
+		</div>
+	</div>
+
+
 	<script src="js/libs/swiper.min.js"></script>
-	<script src="js/libs.min.js"></script>
 	<script src="js/libs/jquery-3.4.1.min.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/libs/particles.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>

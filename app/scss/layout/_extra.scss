@@ -26,6 +26,7 @@
 
 .form-label {
     padding-bottom: 10px;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.02em;
     color: #DEDEDE;
@@ -36,6 +37,10 @@
         font-size: 16px;
 
     }
+}
+
+.form-label_theme_orange {
+    color: #FF4500;
 }
 
 .form-input {
@@ -55,13 +60,11 @@
     }
 }
 
-
-
 .btn {
     text-align: center;
     padding: 15px 20px;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .7s;
     font-size: 10px;
     letter-spacing: 0.02em;
     color: #DEDEDE;
@@ -81,10 +84,10 @@
     border: 1px solid #FF4500;
     background: #FF4500;
     color: #FDFDFD !important;
-    
+
     &:hover {
-        border: 1px solid #CC3700!important;
-        background: #CC3700!important;
+        border: 1px solid #CC3700 !important;
+        background: #CC3700 !important;
     }
 }
 
@@ -104,7 +107,7 @@
 
     &:hover {
         background-color: #17181B;
-        color: #D5D5D5 ;
+        color: #D5D5D5;
     }
 }
 
@@ -120,7 +123,7 @@
 
 .btn_style_grey {
     color: #A1A1A1;
-    
+
 }
 
 .btn_style_border-none {
@@ -146,6 +149,7 @@
             padding: 0;
 
         }
+
         &--name {
             font-size: 28px;
             line-height: 34px;
@@ -175,6 +179,7 @@
 
     &__inner {
         padding-left: 15px;
+
         @media (min-width: 992px) {
             padding-left: 150px;
         }
@@ -195,6 +200,7 @@
 
     &__inner_p_right {
         padding-right: 15px;
+
         @media (min-width: 992px) {
             padding-right: 70px;
 
@@ -203,6 +209,7 @@
 
     &__inner_pl_30 {
         padding-left: 15px;
+
         @media (min-width: 992px) {
             padding-left: 30px;
         }
@@ -210,6 +217,7 @@
 
     &__inner_pr_30 {
         padding-right: 15px;
+
         @media (min-width: 992px) {
             padding-right: 30px;
         }
@@ -226,16 +234,17 @@
         }
     }
 
-	&__headline {
+    &__headline {
         font-size: 16px;
         line-height: 28px;
         letter-spacing: 0.02em;
         padding: 0 15px;
+
         @media (min-width: 768px) {
             padding: 0 50px;
         }
     }
-    
+
     &__headline_dark {
         color: #DEDEDE;
     }
@@ -246,7 +255,7 @@
 
     &__page {
         padding: 35px 0;
-    
+
         @media (min-width: 992px) {
             padding: 50px 0;
         }
@@ -278,7 +287,8 @@
 
 .headline-news {
     padding-left: 15px;
-        @media (min-width: 992px) {
+
+    @media (min-width: 992px) {
         padding-left: 150px;
     }
 
@@ -288,7 +298,7 @@
 }
 
 .section_theme_dark {
-	background-color: #17181B;
+    background-color: #17181B;
 }
 
 .section_theme_light {
@@ -300,7 +310,7 @@
     font-size: 16px;
     text-decoration: none;
     transition: all .3s;
-} 
+}
 
 .link_theme_orange {
     color: #FF4500;
@@ -308,4 +318,13 @@
     &:hover {
         color: #FDFDFD;
     }
+}
+
+.particles-rel {
+    position: relative;
+    z-index: 20;
+}
+
+.particles-rel_25 {
+    z-index: 25;
 }

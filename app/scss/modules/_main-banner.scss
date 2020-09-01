@@ -1,5 +1,6 @@
 .main-banner {
     background-color: #17181B;
+    position: relative;
 
     &__inner {
         display: flex;
@@ -15,7 +16,7 @@
 
         @media (min-width: 992px) {
             font-size: 68px;
-            padding-top: 70px;
+            padding-top: 115px;
         }
 
     }
@@ -64,7 +65,7 @@
         flex: 0 0 40%;
         max-width: 40%;
     }
-}    
+}
 
 
 .banner-contact {
@@ -83,29 +84,38 @@
 .banner-social {
     display: flex;
     justify-content: space-around;
-    
-    &__item {
-
-    }
 
     &__link {
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-decoration: none;
+        color: #17181B;
+        transition: all .5s;
+
+        &:hover {
+            color: #FF4500;
+        }
+
+        &:hover svg {
+            fill: #FF4500;
+        }
+
         &--icon {
             width: 25px;
             height: 25px;
             fill: #17181B;
-            margin-right: 20px;
+            transition: all .5s;
+
+            @media (min-width: 576px) {
+                margin-right: 20px;
+            }
         }
 
         &--name {
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.02em;
-            color: #17181B; 
-
             display: none;
 
             @media (min-width: 576px) {
@@ -123,12 +133,12 @@
     @media (min-width: 992px) {
         display: block;
     }
-    &__preview{
+
+    &__preview {
         height: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: relative;
     }
 
     &__play {
@@ -141,9 +151,9 @@
         cursor: pointer;
 
         &--icon {
-           fill: #DEDEDE;
-           width: 70px;
-           height: 70px;
+            fill: #DEDEDE;
+            width: 70px;
+            height: 70px;
         }
     }
 }
