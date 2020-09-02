@@ -525,7 +525,7 @@ function initializeTicker() {
   $ticker.on('mouseover', function () {
     marginAcc = -.2;
   }).on('mouseout', function () {
-    marginAcc = .005;
+    marginAcc = .2;
   });
 }
 
@@ -547,6 +547,18 @@ function animate() {
 
 
 initializeTicker();
+
+
+function clickRadio(el) {
+  var siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
+  for (var i = 0; i < siblings.length; i++) {
+    if (siblings[i] != el)
+      siblings[i].oldChecked = false;
+  }
+  if (el.oldChecked)
+    el.checked = false;
+  el.oldChecked = el.checked;
+}
 
 
 /* ---- particles.js config ---- */
@@ -661,24 +673,3 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
-
-/* ---- stats.js config ---- */
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function () {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
