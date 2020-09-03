@@ -548,7 +548,7 @@ function animate() {
 
 initializeTicker();
 
-
+// Radio buttons
 function clickRadio(el) {
   var siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
   for (var i = 0; i < siblings.length; i++) {
@@ -559,6 +559,25 @@ function clickRadio(el) {
     el.checked = false;
   el.oldChecked = el.checked;
 }
+
+//Radio counter
+
+$(document).ready(function () {
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+});
 
 
 /* ---- particles.js config ---- */

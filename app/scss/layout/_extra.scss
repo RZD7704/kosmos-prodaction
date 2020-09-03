@@ -336,3 +336,25 @@
 .particles-rel_25 {
     z-index: 25;
 }
+
+.counter {
+
+    &__btn {
+        cursor: pointer;
+    }
+
+    &__field {
+        background: transparent;
+        width: 50px;
+        height: 25px;
+        border: 1px solid #FF4500;
+        color: #DEDEDE;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    &__set-form {
+        position: absolute;
+        right: 50px;
+    }
+}

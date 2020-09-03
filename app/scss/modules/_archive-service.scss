@@ -322,11 +322,19 @@
         position: relative;
     }
 
+    &__services-count {
+        display: flex;
+    }
+
     &__label {
         width: 100%;
-        font-size: 20px;
+        font-size: 14px;
         color: #C2C2C2;
         margin-bottom: 30px;
+
+        @media(min-width: 992px) {
+            font-size: 20px;
+        }
     }
 
     &__total {
@@ -336,18 +344,27 @@
     &__total-wgt {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 25px;
     }
 
     &__total-txt {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 14px;
         color: #C2C2C2;
+
+        @media(min-width: 992px) {
+            font-size: 20px;
+        }
     }
 
     &__total-num {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
         color: #C2C2C2;
+
+        @media(min-width: 992px) {
+            font-size: 20px;
+        }
     }
 
     &__radio {
@@ -355,6 +372,12 @@
     }
 }
 
+.popup-set {
+    top: 50px;
+    overflow: hidden auto;
+}
+
 .popup-brief {
+    top: 50px;
     overflow: hidden auto;
 }

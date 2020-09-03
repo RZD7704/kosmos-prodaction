@@ -28,17 +28,23 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 11;
-    padding: 30px 50px 50px 50px;
+    padding: 30px 30px 50px 30px;
+
+    @media(min-width: 992px) {
+        padding: 30px 50px 50px 50px;
+    }
 
 }
 
 .popup-content_rules {
     max-width: 1176px;
+    top: 575px;
 }
 
 .popup-content_brief {
     max-width: 1176px;
-    margin-top: 115px;
+    top: 575px;
+    // margin-top: 115px;
 }
 
 .close-popup {
