@@ -2,7 +2,6 @@
     background-color: #17181B;
     z-index: 100;
     box-shadow: 0px 2px 4px rgba(106, 106, 106, 0.18);
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -86,7 +85,11 @@
         }
 
         &:last-child {
-            padding-bottom: 30%;
+            padding-bottom: 60%;
+
+            @media (min-width: 768px) {
+                padding-bottom: 30%;
+            }
 
             @media (min-width: 992px) {
                 padding-bottom: 0;
@@ -210,12 +213,16 @@
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     transition: 0.5s;
     animation-duration: 0.5s;
+
+    @media(min-width: 992px) {
+        position: absolute;
+    }
 }
 
 .header_sticky {

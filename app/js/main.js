@@ -348,6 +348,35 @@ var mobileMenu = new MobileMenu('.btn-burger', '.header__nav');
     this.init();
   }
   var faqAccordion = new Accordion('.faq-accordion');
+
+  // function menuAccordion(selector) {
+  //   var accordion = $(selector);
+  //   this.allItemsHeader = $(accordion).find('.mega-menu__title');
+  //   this.allItemsContent = $(accordion).find('.mega-list_mob');
+  //   this.allItemsHeader.click(function () {
+  //     var activeItem = $(accordion).find('.mega-menu__wgt.active');
+  //     if ($(this).closest('.mega-menu__wgt').hasClass('active')) {
+  //       $(this).closest('.mega-menu__wgt').find('.mega-list_mob').slideUp();
+  //       $(this).closest('.mega-menu__wgt').removeClass('active');
+  //     } else {
+  //       var item = $(this).closest('.mega-menu__wgt');
+  //       item.addClass('active');
+  //       item.find('.mega-list_mob').slideDown();
+  //       $(activeItem).find('.mega-list_mob').slideUp();
+  //       $(activeItem).removeClass('active');
+  //     }
+
+  //   });
+  //   this.allItemsContent.hide();
+  //   this.init = function () {
+  //     var activeItem = $(accordion).find('.mega-menu__wgt.active');
+  //     if ($(activeItem)) {
+  //       $(activeItem).find('.mega-list').show();
+  //     }
+  //   };
+  //   this.init();
+  // }
+  // var menuAccordion = new menuAccordion('.mega-menu__wrap');
 })(jQuery);
 
 
@@ -391,6 +420,7 @@ $(".custom-option").on("click", function () {
   $(document).ready(function () {
     // Code
     $(function () {
+      // if ($('body').hasClass('section-about')) {
       var target_block = $(".section-about"); // Ищем блок 
       var blockStatus = true;
       $(window).scroll(function () {
@@ -426,20 +456,32 @@ $(".custom-option").on("click", function () {
           });
         }
       });
+
     });
 
     $(function () {
       $('#services-btn').hover(function () {
-        $('.mega-menu').addClass('active'); //показываем всплывающее окно
+        $('.mega-menu').addClass('active');
+        $('.mega-menu').removeClass('mega-menu_slideOut');
+        $('.mega-menu').addClass('mega-menu_slideIn');
       });
+      // $('mega-menu__close-btn').click(function () {
+      //   $('.mega-menu').removeClass('active');
+      //   $('.mega-menu').removeClass('slideIn');
+      //   $('.mega-menu').addClass('slideOut');
+      // });
       $('.mega-menu__link').mouseleave(function () {
         $('.mega-menu').removeClass('active');
       });
+
+      $(".mega-menu .mega-menu__close-btn").click(function () {
+        $(this).parent().removeClass('active');
+        $(this).parent().removeClass('mega-menu_slideIn');
+        $(this).parent().addClass('mega-menu_slideOut');
+      })
     });
-
-
-
   });
+
 
 })(jQuery);
 
@@ -457,6 +499,9 @@ $(".custom-option").on("click", function () {
 
   $.fn.closePopup = function (settings) {
     var elem = $(this);
+    var overlay = $('.popup-overlay');
+    $(overlay).remove();
+    $(elem).removeClass('active');
     // Establish our default settings
     var settings = $.extend({
       anim: 'fade'
@@ -477,14 +522,24 @@ $(".custom-option").on("click", function () {
 
 }(jQuery));
 
-// Click functions for popup
 $('.open-popup').click(function () {
+  $('#' + $(this).data('id')).addClass('active');
   $('#' + $(this).data('id')).openPopup({
     anim: $(this).popupAnim(this)
   });
   $('body').css('overflow', 'hidden');
+  $('body').append('<div class="popup-overlay"></div>');
+  $(document).mouseup(function (e) {
+    var div = $(".popup-content");
+    if (!div.is(e.target) &&
+      div.has(e.target).length === 0) {
+      $('#' + $(div).closest('.popup.active').attr('id')).closePopup({
+        anim: $(div).closest('.popup.active').popupAnim($(div).closest('.popup.active'))
+      });
+    }
+  });
 });
-$('.close-popup, .accept-popup, .popup-overlay').click(function () {
+$('.close-popup, .accept-popup').click(function () {
   $('#' + $(this).closest('.popup').attr('id')).closePopup({
     anim: $(this).popupAnim(this)
   });
@@ -493,7 +548,7 @@ $('.close-popup, .accept-popup, .popup-overlay').click(function () {
 
 var raf = window.requestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || function (cb) {
   setTimeout(cb, 1000 / 30)
-}
+};
 
 
 var $ticker = $('[data-ticker="list"]'),
@@ -547,18 +602,6 @@ function animate() {
 
 
 initializeTicker();
-
-// Radio buttons
-function clickRadio(el) {
-  var siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
-  for (var i = 0; i < siblings.length; i++) {
-    if (siblings[i] != el)
-      siblings[i].oldChecked = false;
-  }
-  if (el.oldChecked)
-    el.checked = false;
-  el.oldChecked = el.checked;
-}
 
 //Radio counter
 
