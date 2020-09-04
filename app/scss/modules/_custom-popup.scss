@@ -25,8 +25,12 @@
     max-width: 800px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    // top: 50%;
+    top: 50px;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    transform: translate(-50%, 0);
     z-index: 11;
     padding: 30px 30px 50px 30px;
 
@@ -36,15 +40,9 @@
 
 }
 
-.popup-content_rules {
-    max-width: 1176px;
-    top: 575px;
-}
-
+.popup-content_rules,
 .popup-content_brief {
     max-width: 1176px;
-    top: 575px;
-    // margin-top: 115px;
 }
 
 .close-popup {
