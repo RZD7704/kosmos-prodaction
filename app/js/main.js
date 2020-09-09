@@ -546,62 +546,124 @@ $('.close-popup, .accept-popup').click(function () {
 });
 
 
-var raf = window.requestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || function (cb) {
-  setTimeout(cb, 1000 / 30)
-};
+//Ticker
 
+(function ($) {
+  var raf = window.requestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || function (cb) {
+    setTimeout(cb, 1000 / 30)
+  };
+  var ticker = $('.tickerlist');
+  $(ticker).each(function (index, elem) {
+    var tickerItem = $(elem).find('.tickeritem');
+    var itemCount = $(tickerItem).length;
+    var tickertWidth = 0;
+    var margin = 0;
+    var marginMaxVel = 2;
+    var marginVel = marginMaxVel;
+    var marginAcc = .1;
 
-var $ticker = $('[data-ticker="list"]'),
-  $tickerItem = $('[data-ticker="item"]'),
-  itemCount = $tickerItem.length,
-  tickertWidth = 0;
+    function setupTicker() {
 
-var margin = 0;
-var marginMaxVel = 2;
-var marginVel = marginMaxVel;
-var marginAcc = .1;
+      for (var i = 0; i < itemCount; i++) {
+        var itemWidth = tickerItem.eq(i).outerWidth();
+        tickertWidth = tickertWidth + itemWidth;
+      }
+      $(elem).css('width', tickertWidth * 2);
 
-function setupTicker() {
+      tickerItem.clone().prependTo($(elem));
+    }
 
-  for (var i = 0; i < itemCount; i++) {
-    var itemWidth = $tickerItem.eq(i).outerWidth();
-    tickertWidth = tickertWidth + itemWidth;
-  }
-  $ticker.css('width', tickertWidth * 2);
+    function initializeTicker() {
+      setupTicker();
+      animate();
 
-  $tickerItem.clone().prependTo($ticker);
-}
+      $(elem).on('mouseover', function () {
+        marginAcc = -.2;
+      }).on('mouseout', function () {
+        marginAcc = .2;
+      });
+    }
 
-function initializeTicker() {
-  setupTicker();
-  //animateTicker();
-  animate();
+    function animate() {
+      if ($(elem).closest('.ticker').hasClass('ticker-services_right')) {
+        $(elem).css('margin-right', margin);
+      }
+      if ($(elem).closest('.ticker').hasClass('ticker-services_left')) {
+        $(elem).css('margin-left', margin);
+      }
 
-  $ticker.on('mouseover', function () {
-    marginAcc = -.2;
-  }).on('mouseout', function () {
-    marginAcc = .2;
+      marginVel += marginAcc;
+      if (marginVel >= marginMaxVel) marginVel = marginMaxVel;
+      if (marginVel <= 0) marginVel = 0;
+
+      margin -= marginVel;
+      if (margin <= -tickertWidth) {
+        margin = 0;
+      }
+      raf(animate);
+    }
+
+    initializeTicker();
   });
-}
+
+})(jQuery);
+
+// var raf = window.requestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || function (cb) {
+//   setTimeout(cb, 1000 / 30)
+// };
 
 
-function animate() {
-  $ticker.css('margin-right', margin);
+// var $ticker = $('[data-ticker="list"]'),
+//   $tickerItem = $('[data-ticker="item"]'),
+//   itemCount = $tickerItem.length,
+//   tickertWidth = 0;
 
-  marginVel += marginAcc;
-  if (marginVel >= marginMaxVel) marginVel = marginMaxVel;
-  if (marginVel <= 0) marginVel = 0;
+// var margin = 0;
+// var marginMaxVel = 2;
+// var marginVel = marginMaxVel;
+// var marginAcc = .1;
 
-  margin -= marginVel;
-  if (margin <= -tickertWidth) {
-    margin = 0;
-  }
-  raf(animate);
-}
+// function setupTicker() {
+
+//   for (var i = 0; i < itemCount; i++) {
+//     var itemWidth = $tickerItem.eq(i).outerWidth();
+//     tickertWidth = tickertWidth + itemWidth;
+//   }
+//   $ticker.css('width', tickertWidth * 2);
+
+//   $tickerItem.clone().prependTo($ticker);
+// }
+
+// function initializeTicker() {
+//   setupTicker();
+//   //animateTicker();
+//   animate();
+
+//   $ticker.on('mouseover', function () {
+//     marginAcc = -.2;
+//   }).on('mouseout', function () {
+//     marginAcc = .2;
+//   });
+// }
+
+
+// function animate() {
+//   $ticker.css('margin-right', margin);
+
+//   marginVel += marginAcc;
+//   if (marginVel >= marginMaxVel) marginVel = marginMaxVel;
+//   if (marginVel <= 0) marginVel = 0;
+
+//   margin -= marginVel;
+//   if (margin <= -tickertWidth) {
+//     margin = 0;
+//   }
+//   raf(animate);
+// }
 
 
 
-initializeTicker();
+// initializeTicker();
 
 //Radio counter
 
