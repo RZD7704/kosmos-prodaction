@@ -608,62 +608,9 @@ $('.close-popup, .accept-popup').click(function () {
 
 })(jQuery);
 
-// var raf = window.requestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || function (cb) {
-//   setTimeout(cb, 1000 / 30)
-// };
-
-
-// var $ticker = $('[data-ticker="list"]'),
-//   $tickerItem = $('[data-ticker="item"]'),
-//   itemCount = $tickerItem.length,
-//   tickertWidth = 0;
-
-// var margin = 0;
-// var marginMaxVel = 2;
-// var marginVel = marginMaxVel;
-// var marginAcc = .1;
-
-// function setupTicker() {
-
-//   for (var i = 0; i < itemCount; i++) {
-//     var itemWidth = $tickerItem.eq(i).outerWidth();
-//     tickertWidth = tickertWidth + itemWidth;
-//   }
-//   $ticker.css('width', tickertWidth * 2);
-
-//   $tickerItem.clone().prependTo($ticker);
-// }
-
-// function initializeTicker() {
-//   setupTicker();
-//   //animateTicker();
-//   animate();
-
-//   $ticker.on('mouseover', function () {
-//     marginAcc = -.2;
-//   }).on('mouseout', function () {
-//     marginAcc = .2;
-//   });
-// }
-
-
-// function animate() {
-//   $ticker.css('margin-right', margin);
-
-//   marginVel += marginAcc;
-//   if (marginVel >= marginMaxVel) marginVel = marginMaxVel;
-//   if (marginVel <= 0) marginVel = 0;
-
-//   margin -= marginVel;
-//   if (margin <= -tickertWidth) {
-//     margin = 0;
-//   }
-//   raf(animate);
-// }
-
-
-
-// initializeTicker();
+(function ($) {
+  $('.order-form__datepicker').datepicker();
+})(jQuery);
 
 //Radio counter
 
