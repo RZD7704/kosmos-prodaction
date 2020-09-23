@@ -7,15 +7,6 @@
     top: 0;
     bottom: 0;
     z-index: 11;
-
-    // background: rgba(0, 0, 0, 0.9);
-    // position: fixed;
-    // display: none;
-    // z-index: 5000;
-    // height: 100%;
-    // width: 100%;
-    // left: 0;
-    // top: 0;
 }
 
 .popup-overlay {
@@ -50,9 +41,45 @@
 
 }
 
+.popup-content_top_35 {
+    top: 35%;
+}
+
+.popup-content_pb_30 {
+    padding-bottom: 30px;
+}
+
+.popup-title {
+    font-weight: 800;
+    font-size: 24px;
+    color: #DEDEDE;
+    padding-bottom: 30px;
+
+    @media (min-width: 992px) {
+        font-size: 36px;
+    }
+}
+
+.popup_rules {
+    overflow: hidden auto;
+}
+
 .popup-content_rules,
 .popup-content_brief {
     max-width: 1176px;
+}
+
+.popup-thanks {
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #DEDEDE;
+        text-align: center;
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
 }
 
 .close-popup {

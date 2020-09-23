@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.d-contents {
+    display: contents;
+}
+
 .d-block {
     display: block;
 }
@@ -78,6 +82,10 @@
     &__link_d_block {
         display: block;
     }
+}
+
+.btn_mr_30 {
+    margin-right: 30px;
 }
 
 .btn_transparent {

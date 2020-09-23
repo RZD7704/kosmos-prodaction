@@ -173,7 +173,6 @@ var swiper6 = new Swiper('.slider__single-service', {
     prevEl: '.section-header__btn-slider_prev-single-service',
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20
@@ -182,12 +181,10 @@ var swiper6 = new Swiper('.slider__single-service', {
       slidesPerView: 2,
       spaceBetween: 20
     },
-    // when window width is >= 480px
     768: {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    // when window width is >= 640px
     992: {
       slidesPerView: 3,
       spaceBetween: 40
@@ -348,35 +345,6 @@ var mobileMenu = new MobileMenu('.btn-burger', '.header__nav');
     this.init();
   }
   var faqAccordion = new Accordion('.faq-accordion');
-
-  // function menuAccordion(selector) {
-  //   var accordion = $(selector);
-  //   this.allItemsHeader = $(accordion).find('.mega-menu__title');
-  //   this.allItemsContent = $(accordion).find('.mega-list_mob');
-  //   this.allItemsHeader.click(function () {
-  //     var activeItem = $(accordion).find('.mega-menu__wgt.active');
-  //     if ($(this).closest('.mega-menu__wgt').hasClass('active')) {
-  //       $(this).closest('.mega-menu__wgt').find('.mega-list_mob').slideUp();
-  //       $(this).closest('.mega-menu__wgt').removeClass('active');
-  //     } else {
-  //       var item = $(this).closest('.mega-menu__wgt');
-  //       item.addClass('active');
-  //       item.find('.mega-list_mob').slideDown();
-  //       $(activeItem).find('.mega-list_mob').slideUp();
-  //       $(activeItem).removeClass('active');
-  //     }
-
-  //   });
-  //   this.allItemsContent.hide();
-  //   this.init = function () {
-  //     var activeItem = $(accordion).find('.mega-menu__wgt.active');
-  //     if ($(activeItem)) {
-  //       $(activeItem).find('.mega-list').show();
-  //     }
-  //   };
-  //   this.init();
-  // }
-  // var menuAccordion = new menuAccordion('.mega-menu__wrap');
 })(jQuery);
 
 
@@ -465,11 +433,6 @@ $(".custom-option").on("click", function () {
         $('.mega-menu').removeClass('mega-menu_slideOut');
         $('.mega-menu').addClass('mega-menu_slideIn');
       });
-      // $('mega-menu__close-btn').click(function () {
-      //   $('.mega-menu').removeClass('active');
-      //   $('.mega-menu').removeClass('slideIn');
-      //   $('.mega-menu').addClass('slideOut');
-      // });
       $('.mega-menu__link').mouseleave(function () {
         $('.mega-menu').removeClass('active');
       });
@@ -608,10 +571,6 @@ $('.close-popup, .accept-popup').click(function () {
 
 })(jQuery);
 
-(function ($) {
-  $('.order-form__datepicker').datepicker();
-})(jQuery);
-
 //Radio counter
 
 $(document).ready(function () {
@@ -631,6 +590,10 @@ $(document).ready(function () {
   });
 });
 
+
+(function ($) {
+  $('.order-form__datepicker').datepicker();
+})(jQuery);
 
 /* ---- particles.js config ---- */
 

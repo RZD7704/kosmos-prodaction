@@ -73,7 +73,11 @@
 				<div class="section__inner section__inner_pl_30 section__inner_pr_30">
 					<div class="service-heading">
 						<h1 class="headline service-heading__headline headline_theme_light">Услуги по фотосъёмке</h1>
-						<div class="service-heading__nav-wrap">
+						<div
+							class="service-heading__nav-wrap service-heading__nav-wrap_d_flex service-heading__nav-wrap_jc_between service-heading__nav-wrap_w_100">
+							<button
+								class="btn btn_mr_30 btn-popup open-popup service-wgt__nav-btn btn_transparent btn_style_orange"
+								type="button" data-id="popup_thanks">Заполнить бриф</button>
 							<button type="button"
 								class="btn btn-popup open-popup service-heading__nav-btn btn_transparent btn_style_orange"
 								data-id="popup_set">Собрать сет</button>
@@ -87,14 +91,12 @@
 									<div class="label-wgt__item-inner">
 										<span class="label-wgt__title">Услуга</span>
 										<span class="label-wgt__active-num">01</span>
-
 										<span class="label-wgt__total-num">10</span>
 									</div>
-
 								</div>
 								<div class="label-wgt__item label-wgt__item_theme_orange">
 									<a class="btn btn_filled btn_style_orange label-wgt__btn"
-										href="archive-service.html">Заполнить бриф</a>
+										href="archive-service.html">Смотреть кейсы</a>
 								</div>
 							</div>
 						</div>
@@ -123,16 +125,15 @@
 								<div class="service-wgt__nav-item">
 									<button
 										class="btn btn-popup open-popup service-wgt__nav-btn btn_transparent btn_style_light"
-										type="button">Заказать услугу</button>
+										type="button" data-id="popup_service">Заказать услугу</button>
 								</div>
 								<div class="service-wgt__nav-item">
 									<button
 										class="btn btn-popup open-popup service-wgt__nav-btn btn_transparent btn_style_orange"
-										type="button" data-id="popup_brief">Заполнить бриф</button>
+										type="button">Заполнить бриф</button>
 								</div>
 							</div>
 						</div>
-
 					</div>
 					<div class="service-wgt service-wgt_reverse">
 						<div class="service-wgt__img-wrap service-wgt__img-wrap_reverse">
@@ -143,14 +144,13 @@
 									<div class="label-wgt__item-inner">
 										<span class="label-wgt__title">Услуга</span>
 										<span class="label-wgt__active-num">02</span>
-
 										<span class="label-wgt__total-num">10</span>
 									</div>
 
 								</div>
 								<div class="label-wgt__item label-wgt__item_theme_orange">
 									<a class="btn btn_filled btn_style_orange label-wgt__btn"
-										href="archive-service.html">Заполнить бриф</a>
+										href="archive-service.html">Смотреть кейсы</a>
 								</div>
 							</div>
 
@@ -205,7 +205,7 @@
 								</div>
 								<div class="label-wgt__item label-wgt__item_theme_orange">
 									<a class="btn btn_filled btn_style_orange label-wgt__btn"
-										href="archive-service.html">Заполнить бриф</a>
+										href="archive-service.html">Смотреть кейсы</a>
 								</div>
 							</div>
 
@@ -327,7 +327,6 @@
 				</div>
 			</div>
 		</footer>
-
 	</div>
 
 	<div id="popup_set" class="popup popup-set">
@@ -510,6 +509,104 @@
 				</div>
 			</form>
 
+		</div>
+	</div>
+
+	<div id="popup_service" class="popup popup-brief">
+		<div class="popup-content popup-content_brief">
+			<button type="button" class="close-popup">&times;</button>
+			<h3 class="popup-title">Хочешь к нам?</h3>
+			<form class="order-form" action="#">
+				<div class="order-form__row order-form__row_p_0">
+					<div class="order-form__row--col order-form__row--col_w_100 order-form__row--col_p_0">
+						<div class="field-wrap">
+							<label class="form-label d-block" for="banner-name">Имя</label>
+							<input type="text" id="banner-name" class="form-input form-input__banner">
+
+							<label class="form-label d-block" for="banner-number">Номер телефона</label>
+							<input type="text" id="banner-number" class="form-input form-input__banner">
+
+							<label class="form-label d-block" for="banner-email">Почта</label>
+							<input type="text" id="banner-email" class="form-input form-input__banner">
+
+							<label class="form-label form-label_theme_orange d-block" for="banner-promo">Угадайте
+								промо-код</label>
+							<input type="text" id="banner-promo" class="form-input form-input__banner">
+						</div>
+					</div>
+					<div class="order-form__row--col order-form__row--col_w_100 order-form__row--col_p_0">
+						<div class="field-wrap">
+							<label class="form-label d-block" for="banner-service">Желаемая услуга</label>
+							<select id="banner-service" name="sources" class="custom-select sources"
+								placeholder="Услуги">
+								<option value="profile">Предметная съёмка</option>
+								<option value="word">Предметная съёмка</option>
+								<option value="hashtag">Предметная съёмка</option>
+							</select>
+							<label class="form-label d-block" for="banner-date">Желаемая дата</label>
+							<input type="button" id="banner-date"
+								class="form-input form-input__banner order-form__datepicker">
+
+							<label class="form-label d-block" for="banner-packages">Количество пакетов
+								услуг</label>
+							<select id="banner-packages" name="sources" class="custom-select sources"
+								placeholder="Услуги">
+								<option value="profile">1 пакет</option>
+								<option value="word">1 пакет</option>
+								<option value="hashtag">1 пакет</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<input class="custom-checkbox order-form__checkbox" type="checkbox" id="order" name="order" value="yes">
+				<label class="order-form__label" for="order">Согласен с <button
+						class="d-contents btn-popup btn-popup__rules open-popup" data-id="popup_rules"
+						type="button">правилами
+						использования сайта</button></label>
+
+				<div class="txt-center">
+					<input class="btn btn_transparent btn_style_light" type="submit" name="submit" value="Заказать">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="popup_rules" class="popup popup-rules">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+			<button type="button" class="close-popup">&times;</button>
+			<h1 class="popup-rules__title">Popup 1</h1>
+			<p class="popup-rules__txt"> It has survived not only five centuries, but also the leap
+				into
+				electronic typesetting, remaining essentially unchanged. It was
+				popularised in the 1960s with the release of Letraset sheets containing
+				Lorem Ipsum passages, and more recently with desktop publishing software
+				like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="popup-rules__txt"> It has survived not only five centuries, but also the leap
+				into
+				electronic typesetting, remaining essentially unchanged. It was
+				popularised in the 1960s with the release of Letraset sheets containing
+				Lorem Ipsum passages, and more recently with desktop publishing software
+				like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="popup-rules__txt"> It has survived not only five centuries, but also the leap
+				into
+				electronic typesetting, remaining essentially unchanged. It was
+				popularised in the 1960s with the release of Letraset sheets containing
+				Lorem Ipsum passages, and more recently with desktop publishing software
+				like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div class="txt-center">
+				<label class="btn accept-popup btn_transparent btn_style_light" for="order" type="button"
+					name="submit">Принять</label>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_thanks" class="popup popup-thanks">
+		<div class="popup-overlay"></div>
+		<div class="popup-content popup-content_pb_30 popup-content_top_35">
+			<button type="button" class="close-popup">&times;</button>
+			<h1 class="popup-thanks__title">Спасибо! Мы с вами свяжемся.</h1>
 		</div>
 	</div>
 
